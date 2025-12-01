@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kept Labs - Coming Soon</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kept Labs - Coming Soon</title>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #ffffff;
+        color: #333;
+        -webkit-text-size-adjust: none;
+    }
+    .container {
+        width: 100%;
+        padding: 0 20px; /* prevents text from touching edges on small screens */
+        box-sizing: border-box;
+    }
+    h1 {
+        font-size: 42px;
+        margin-bottom: 8px;
+    }
+    p {
+        font-size: 20px;
+        color: #666;
+        margin-top: 0;
+    }
 
-        h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-
-        p {
-            font-size: 22px;
-            margin-top: 5px;
-            color: #777;
-        }
-    </style>
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+        h1 { font-size: 32px; }
+        p { font-size: 18px; }
+    }
+</style>
 </head>
-
 <body>
 
-    <div>
-        <h1>Kept Labs</h1>
-        <p>Coming Soon</p>
-    </div>
+<div class="container">
+    <h1>Kept Labs</h1>
+    <p>Coming Soon</p>
+</div>
 
 </body>
-
 </html>
